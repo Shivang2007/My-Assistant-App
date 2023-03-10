@@ -1,0 +1,7 @@
+{
+    "title": "My Assistant",
+    "description": "Your Pesonal Assistant",
+    "db_url":"https://getpantry.cloud/apiv1/pantry/cebe6650-5045-4ea3-b6f0-d171a877b307/basket/myassistant",
+    "news_api":"https://inshorts.deta.dev/news?category=",
+    "news_topic":"politics"
+}

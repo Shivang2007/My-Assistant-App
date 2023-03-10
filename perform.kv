@@ -1,0 +1,25 @@
+<SettingPage>:
+    on_enter:root.enter()
+    
+    MDBoxLayout:
+        orientation:'vertical'
+        MDTopAppBar:
+            id:tbar
+            title:"Setting"
+            right_action_items: [["home", lambda x: root.home()]]
+        
+        ScrollView:
+            do_scroll_x:False
+            do_scroll_y:True
+            bar_margin:4
+            bar_width:10
+            scroll_type:['bars', 'content']
+            bar_color:[0, 0, 1, 1]
+            id:scroll
+            
+            GridLayout:
+                size_hint_y:None
+                spacing:0,75
+                padding:25,150
+                id:grid
+                cols:1

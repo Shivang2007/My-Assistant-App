@@ -1,0 +1,54 @@
+<HomePage>:
+    on_enter:
+        self.enter()
+    MDBoxLayout:
+        orientation:'vertical'
+        MDTopAppBar:
+            id:tbar
+            elevation: 4
+            left_action_items:[['menu', lambda x: nav_drawer.set_state("open")]]
+            
+        ScrollView:
+            do_scroll_x:False
+            do_scroll_y:True
+            bar_margin:4
+            bar_width:5
+            scroll_type:['bars', 'content']
+            bar_color:[0, 0, 1, 1]
+            id:scroll
+            
+            GridLayout:
+                size_hint_y:None
+                spacing:0,75
+                padding:25,150
+                id:grid
+                cols:1
+
+
+    MDSpinner:
+        size_hint: None, None
+        size: dp(46), dp(46)
+        pos_hint: {'center_x': .5, 'center_y': .5}
+        id:loader
+        active:True
+
+    MDNavigationDrawer:        
+        id: nav_drawer
+        radius: (0, 16, 16, 0)        
+        MDNavigationDrawerMenu
+            MDNavigationDrawerHeader:
+                id:ttool
+                spacing: "4dp"
+                padding: "12dp", 0, 0, "56dp"
+                scrim_color: 0, 0, 0, .8
+                
+            MDNavigationDrawerLabel:
+                text: "App Performance"
+            MDNavigationDrawerDivider:
+    
+            MDNavigationDrawerItem
+                icon: "cog"
+                right_text: ""
+                text_right_color: "#4a4939"
+                text: "Setting"
+                on_release:root.goto('settp')
