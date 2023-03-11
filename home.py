@@ -175,3 +175,6 @@ class HomePage(Screen):
     
     def goto(self, where):
         self.manager.current = where
+    
+    def tell(self, text):
+        toast(str(text))

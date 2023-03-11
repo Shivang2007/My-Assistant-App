@@ -29,7 +29,7 @@ source.include_exts =
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 1.0.0
+version = 1.5.0
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
@@ -37,7 +37,7 @@ version = 1.0.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,pillow,kivymd,plyer,certifi,android,requests,urllib3,idna,charset-normalizer,chardet,pyjnius,six, https://github.com/kvdroid/Kvdroid/archive/refs/heads/master.zip,soupsieve,bs4,beautifulsoup4
+requirements = python3,kivy,pillow,kivymd,plyer,certifi,android,requests,urllib3,idna,charset-normalizer,chardet,pyjnius,six, https://github.com/kvdroid/Kvdroid/archive/refs/heads/master.zip,soupsieve,bs4,beautifulsoup4,google-api-python-client,google-auth-httplib2,google-auth-oauthlib,tabulate,tqdm
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes

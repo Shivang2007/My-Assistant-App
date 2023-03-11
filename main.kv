@@ -38,13 +38,33 @@
         MDNavigationDrawerMenu
             MDNavigationDrawerHeader:
                 id:ttool
-                spacing: "4dp"
+                spacing: "6dp"
                 padding: "12dp", 0, 0, "56dp"
                 scrim_color: 0, 0, 0, .8
+            
+            MDNavigationDrawerDivider:
+            MDNavigationDrawerLabel:
+                text: "App Tools"
+                
+            MDNavigationDrawerItem
+                icon: "file-pdf-box"
+                right_text: ""
+                text_right_color: "#4a4939"
+                text: "PDF Editor"
+                on_release:root.goto('pdfp')
+            
+            MDNavigationDrawerItem
+                icon: "google-drive"
+                right_text: ""
+                text_right_color: "#4a4939"
+                text: "Google Drive"
+                on_release:root.goto('gdrivep')
+            
+            MDNavigationDrawerDivider:
                 
             MDNavigationDrawerLabel:
                 text: "App Performance"
-            MDNavigationDrawerDivider:
+            #MDNavigationDrawerDivider:
     
             MDNavigationDrawerItem
                 icon: "cog"
@@ -52,3 +72,13 @@
                 text_right_color: "#4a4939"
                 text: "Setting"
                 on_release:root.goto('settp')
+            
+            MDNavigationDrawerItem
+                icon: "select-inverse"
+                right_text: ""
+                text_right_color: "#4a4939"
+                text: "Version 1.5.0"
+                on_release:root.tell(self.text)
+            
+            #MDNavigationDrawerDivider:
+                

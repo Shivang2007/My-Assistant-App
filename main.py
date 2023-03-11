@@ -74,6 +74,7 @@ app_desc = add_data['description']
 ##############################
 from home import HomePage
 from perform import SettingPage
+from imagetasks.pdftasks import PdfPage, GoogleDrivePage
 
 class MainApp(MDApp):
     def build(self):
@@ -85,12 +86,15 @@ class MainApp(MDApp):
         
         self.set_bars_colors()
         
-        Builder.load_file('perform.kv')
+        Builder.load_file('kvfiles/perform.kv')
+        Builder.load_file('kvfiles/tasks.kv')
         
         sm=ScreenManager()
         sc_lst = [
         HomePage(name='homep'),
-        SettingPage(name='settp')
+        SettingPage(name='settp'),
+        PdfPage(name='pdfp'),
+        GoogleDrivePage(name='gdrivep')
         ]
         for sc in sc_lst:
             sm.add_widget(sc)
