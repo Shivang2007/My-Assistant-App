@@ -37,7 +37,7 @@ version = 1.5.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,pillow,kivymd,plyer,certifi,android,requests,urllib3,idna,charset-normalizer,chardet,pyjnius,https://github.com/kvdroid/Kvdroid/archive/refs/heads/master.zip,soupsieve,bs4,beautifulsoup4,google-api-python-client==1.9.3,google, six==1.13.0,google-auth-httplib2==0.0.3,google-auth-oauthlib==0.4.1,google-api-core==1.21.0,google-auth==1.18.0,tabulate,tqdm
+requirements = python3,kivy,pillow,kivymd,plyer,certifi,android,requests,urllib3,idna,charset-normalizer,chardet,pyjnius,https://github.com/kvdroid/Kvdroid/archive/refs/heads/master.zip,httplib2,soupsieve,bs4,beautifulsoup4,google-api-python-client==1.9.3,google, six==1.13.0,google-auth-httplib2==0.0.3,google-auth-oauthlib==0.4.1,google-api-core==1.21.0,google-auth==1.18.0,tabulate,tqdm
 
 
 # (str) Custom source folders for requirements
